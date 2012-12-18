@@ -81,7 +81,11 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-radius-bottomright: 10px;
 	border-bottom-right-radius: 10px;
+  margin-top: 40px;
 	padding-bottom: 40px;
+}
+
+#header {
 }
 
 .headerlogo{
@@ -113,34 +117,20 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 */
 
 #bodybox {
-behavior: url(ie-css3.htc);
-width: 100%;
-background: #fff;
--webkit-border-bottom-right-radius: 30px;
--moz-border-radius-bottomright: 30px;
-border-radius: 0px 0px 10px 0px;
--moz-box-shadow: -2px 2px 6px rgba(0,0,0,0.6);
--webkit-box-shadow: -2px 2px 6px rgba(0,0,0,0.6);
+  -webkit-border-bottom-right-radius: 30px;
+  -moz-border-radius-bottomright: 30px;
+  border-radius: 0px 0px 10px 0px;
+  -moz-box-shadow: -2px 2px 6px rgba(0,0,0,0.6);
+  -webkit-box-shadow: -2px 2px 6px rgba(0,0,0,0.6);
 }
 
-.sidebar1 {
-	float: left;
-	width: 198px;
-	padding-left: 2px;
-	height: 100%;
+#content {
 	background: #fff;
-	padding-bottom: 10px;
-}
-.content {
-	background: #fff;
-	padding: 10px 0;
-	width: 760px;
-	float: left;
-	text-align: left;
+	padding: 20px;
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
-.content ul, .content ol { 
+#content ul, #content ol { 
 	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
 }
 
@@ -169,6 +159,7 @@ border-radius: 0px 0px 10px 0px;
 
 /* ~~ The footer ~~ */
 .footer {
+  text-align: center;
 	padding: 0;
 	background: #DDDDDD;
 	position: relative;/* this gives IE6 hasLayout to properly clear */
