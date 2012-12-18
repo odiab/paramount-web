@@ -1,0 +1,7 @@
+[23-Mar-2011 14:25:49] PHP Warning:  readfile(navigation.html) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/paramo10/public_html/dir/about.php on line 27
+[25-Mar-2011 11:48:36] PHP Parse error:  syntax error, unexpected '.' in /home/paramo10/public_html/dir/contactform.php on line 3
+[25-Mar-2011 11:49:57] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/paramo10/public_html/dir/contactform.php on line 3
+[25-Mar-2011 12:52:40] PHP Warning:  readfile(../../navigation.html) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/paramo10/public_html/dir/staff.php on line 27
+[25-Mar-2011 12:54:38] PHP Warning:  readfile(../../navigation.html) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/paramo10/public_html/dir/staff.php on line 27
+[25-Mar-2011 12:54:41] PHP Warning:  readfile(../../navigation.html) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/paramo10/public_html/dir/staff.php on line 27
+[25-Mar-2011 12:55:34] PHP Warning:  readfile(../../navigation.html) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/paramo10/public_html/dir/staff.php on line 27
