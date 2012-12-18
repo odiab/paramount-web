@@ -18,7 +18,7 @@
 
         <h3>Read more about us:</h3>
         <ul class="nobullet">
-              <li> • <a href="About/history.php">The History of Paramount</a></li>
+              <li> • <a href="about/history.php">The History of Paramount</a></li>
               <li> • <a href="staff.php">Our Staff</a></li>
         </ul>
       </div>

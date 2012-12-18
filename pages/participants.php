@@ -19,8 +19,8 @@
       <hr align="center" noshade="noshade" size=1 width="40%" />
       <h2>Information about Clinical Trials</h2>
       <ul>
-        <li><a href="PPart/whatisCT.php">What is a clinical trial?</a></li>
-        <li><a href="PPart/whyparticipate.php">Why participate in clinical trials?</a></li>
+        <li><a href="participants/clinicalTrials.php">What is a clinical trial?</a></li>
+        <li><a href="participants/participate.php">Why participate in clinical trials?</a></li>
         <li><a href="ourStudies.php">What trials are available for me to be a part of?</a></li>
       </ul>
       <br />
