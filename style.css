@@ -1,12 +1,16 @@
 body {
-	font: 90%/1.4 Trebuchet MS, Verdana, Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', 'Trebuchet MS', 'Verdana', 'Helvetica', 'Arial', sans-serif;
 	background: #d8f0f3;
 	margin: 0;
 	padding: 0;
 	color: #000;
 	background-image: url(/images/bgroundGradient.PNG);
 	background-repeat: no-repeat;
-    background-position: left top;
+  background-position: left top;
+}
+
+p {
+  line-height: 180%;
 }
 
 /* ~~ Element/tag selectors ~~ */
@@ -185,7 +189,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-size: 1px;
 	line-height: 0px;
 }
-.style4 {	font-size: small
+.style4 {
+  font-size: small
 }
 .container .header table {
 	font-size: 30px;
@@ -210,7 +215,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 
 .container .header .navbuttontable table {
-	font-family: Trebuchet MS, Verdana, Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', 'Trebuchet MS', 'Verdana', 'Helvetica', 'Arial', sans-serif;
 }
 .container .header .navbuttontable table {
 	font-weight: bold;
