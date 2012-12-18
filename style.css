@@ -1,14 +1,12 @@
-@charset "utf-8";
-/* CSS Document */
-
 body {
 	font: 90%/1.4 Trebuchet MS, Verdana, Helvetica, Arial, sans-serif;
-	background: #F0F8FF;
+	background: #d8f0f3;
 	margin: 0;
 	padding: 0;
 	color: #000;
-	/*background-image: url(new%20header/background.png);
-	background-repeat: repeat; */
+	background-image: url(/images/bgroundGradient.PNG);
+	background-repeat: no-repeat;
+    background-position: left top;
 }
 
 /* ~~ Element/tag selectors ~~ */
@@ -47,13 +45,27 @@ a img { /* this selector removes the default blue border displayed in some brows
 	border: none;
 }
 
+hr {
+	border: 1;
+}
+
+hr.hralt {
+	  border-left: 0;
+      border-right: 0;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      color: #fff;
+      background-color: #fff;
+      height: 4px;
+}
+
 /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
 	color: #69C;
 	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
 }
 a:visited {
-	color: #C9F;
+	color: #C3F;
 	text-decoration: underline;
 }
 a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
@@ -73,8 +85,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 .headerlogo{
-	behavior: url(ie-css3.htc);
-	background-image: url(<?php include "/randomimage.php"; ?>);
+	background-image: url('/images/headers/rotator.php');
 	-webkit-border-top-left-radius: 30px;
 	-moz-border-radius-topleft: 30px;
     border-top-left-radius: 30px;
