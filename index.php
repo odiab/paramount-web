@@ -4,21 +4,10 @@
 ?>
 <body>
  <div class="container">
-    <div class="headerlogo">
-      <table class="cellLink" width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td height = 250px><a href="index.html"></a></td>
-        </tr>
-      </table>
-    </div>
-
-    <? readfile("navigation.html"); ?>
+    <?php include($root . '/templates/header.php'); ?>
 
     <div id="bodybox">
-      <div class="sidebar1">
-        <p>This website is still under construction.</p>
-      </div>
-      <div class="content">
+      <div id="content">
         <h1>We're Here to Work for You.</h1>
         <hr align=left noshade="noshade" size=1 />
         <p>
@@ -41,8 +30,7 @@
         </p>
       </div>
 
-      <div class="footer"><center><span class="style4">Copyright Paramount Medical Research &amp; Consulting, LLC, 2010. <a href="dir/contact.php">Contact Us.</a></span></center></div>
-      </div>
+      <?php include($root . '/templates/footer.php'); ?>
     </div>
   </div>
 
