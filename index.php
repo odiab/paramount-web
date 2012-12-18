@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <title>Paramount Medical Research and Consulting</title>
-<link rel="stylesheet" href="stylecss.php" media="screen" />
+<link rel="stylesheet" href="style.css" media="screen" />
 </head>
 
 <body>
@@ -32,8 +32,8 @@
   </div>
   <div class="content">
     <h1>We're Here to Work for You.</h1>
-    <hr align=left noshade="noshade" size=1/>
-    <p>Paramount Medical Research & Consulting, LLC is affiliated with Premier Physicians Centers – a Greater Cleveland-based multispecialty group with over 75 physicians in family practice, internal medicine, cardiology, endocrinology, rheumatology, oncology, orthopedic, and physical medicine.  </p>
+    <hr align=left noshade="noshade" size=1 />
+    <p>Paramount Medical Research &amp; Consulting, LLC is affiliated with Premier Physicians Centers – a Greater Cleveland-based multispecialty group with over 75 physicians in family practice, internal medicine, cardiology, endocrinology, rheumatology, oncology, orthopedic, and physical medicine.  </p>
 
 
 <p>Our participants are often referred by the various members of Premier Physicians, offering them the option of clinical research.</p>
