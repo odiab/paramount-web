@@ -4,6 +4,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <title>Paramount Medical Research and Consulting</title>
-  <link rel="stylesheet" href="style.css" media="screen" />
+  <link rel="stylesheet" href="/style.css" media="screen" />
 </head>
 
