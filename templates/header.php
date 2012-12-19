@@ -1,11 +1,9 @@
 <div id="header">
-  <div class="headerlogo">
-    <table class="cellLink" width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height = 250px><a href="/index.php"></a></td>
-      </tr>
-    </table>
+  <div id="headerlogo">
+    <div id="headertext">
+      <h1>Paramount</h1>
+      <h2>Medical Research and Consulting</h2>
+    </div>
   </div>
-
   <? include('navigation.php'); ?>
 </div>

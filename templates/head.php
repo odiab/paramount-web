@@ -4,6 +4,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <title>Paramount Medical Research and Consulting</title>
-  <link rel="stylesheet" href="/style.css" media="screen" />
+  <link rel="stylesheet" href="/style.css<?php echo '?' . time() ?>" media="screen" />
 </head>
 
