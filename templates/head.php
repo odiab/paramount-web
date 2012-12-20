@@ -9,4 +9,6 @@
       <link rel="stylesheet" href="/style/<?php echo $style ?>" media="screen" />
     <?php }
   } ?>
+  <script type="text/javascript" src="/scripts/lib/jquery-1.8.3.min.js"></script> 
+  <script type="text/javascript" src="/scripts/application.js"></script> 
 </head>
