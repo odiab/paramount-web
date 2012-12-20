@@ -47,6 +47,7 @@
 
         include($root . '/templates/contactPanes.php');
       ?></div>
+      <hr />
       <div class="contactSection">
         <?php
         // populate contact cards
