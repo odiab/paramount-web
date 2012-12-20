@@ -1,0 +1,53 @@
+.contactSection {
+  margin-bottom: 50px;
+}
+
+.contactPaneContainer {
+  padding: 0;
+  margin: 10px;
+  background-color: #f4f4f4;
+  display:inline-block;
+  box-shadow: -2px 2px 6px #888;
+  -moz-box-shadow: -2px 2px 6px #888;
+  -webkit-box-shadow: -2px 2px 3px #888;
+  width: 80%;
+  clear: both;
+}
+
+.contactCard, .contactPane {
+  padding: 20px;
+}
+
+.contactCard {
+  display: inline-block;
+  margin: 10px;
+  background-color: #f3f3f3;
+  box-shadow: -2px 2px 6px #888;
+  -moz-box-shadow: -2px 2px 6px #888;
+  -webkit-box-shadow: -2px 2px 3px #888;
+  width: 450px;
+}
+
+.contactPane {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contactPaneContainer p {
+  padding: 20px;
+  margin: 0;
+  background-color: #eaeaea;
+}
+
+.contactCard h2, .contactCard h3, .contactPane h2, .contactCard h3 {
+  padding: 0px 0px 5px 0px;
+  margin: 0px 0px 5px 0px;
+}
+
+.contactCard table {
+
+}
+
+.contactCard, .contactPane table td {
+  padding-right: 20px;
+}
