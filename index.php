@@ -1,10 +1,9 @@
-
 <?php 
   $root = $_SERVER['DOCUMENT_ROOT'];
   include($root . '/templates/head.php');
 ?>
 <body>
- <div class="container">
+ <div id="bodyContainer">
     <?php include($root . '/templates/header.php'); ?>
 
     <div id="bodybox">
@@ -13,7 +12,6 @@
         <p>
           We strive to provide our study participants with altruistic care and compassion for the common goal of advancing science.  In doing so, we ensure that our participant volunteers consistently receive individualized care with respect and integrity.
         </p>
-        <br />
         <p>
           We are committed to our sponsor partners in providing the research industry with the highest quality of results, including accurate and timely data, and enriched with the high standards of professionalism from our staff.  Our commitment to excellence is evident in each step of the clinical research process.
         </p>

@@ -1,4 +1,4 @@
-<div class="footer">
+<div id="footer">
   <p>
     Copyright Paramount Medical Research &amp; Consulting, LLC, 2010.
     <a href="/pages/contact.php">Contact Us.</a>

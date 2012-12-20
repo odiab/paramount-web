@@ -5,7 +5,7 @@
 
 <body>
 
-<div class="container">
+<div id="bodyContainer">
   <?php include($root . '/templates/header.php'); ?>
 
   <div id="bodybox">

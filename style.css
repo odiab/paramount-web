@@ -1,14 +1,21 @@
+/***********************************
+ *                                 *
+ *             WEBFONTS            *
+ *                                 *
+ ***********************************/
 @import url("//hello.myfonts.net/count/2526b9");
-
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @font-face {font-family: 'ACaslon-AltRegular';src: url('/webfonts/2526B9_0_0.eot');src: url('/webfonts/2526B9_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_0_0.woff') format('woff'),url('/webfonts/2526B9_0_0.ttf') format('truetype');}
-
 
 @font-face {font-family: 'ACaslonExp-Regular';src: url('/webfonts/2526B9_1_0.eot');src: url('/webfonts/2526B9_1_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_1_0.woff') format('woff'),url('/webfonts/2526B9_1_0.ttf') format('truetype');}
 
-
 @font-face {font-family: 'ACaslon-Regular';src: url('/webfonts/2526B9_2_0.eot');src: url('/webfonts/2526B9_2_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_2_0.woff') format('woff'),url('/webfonts/2526B9_2_0.ttf') format('truetype');}
 
+/***********************************
+ *                                 *
+ *            CONTAINERS           *
+ *                                 *
+ ***********************************/
 body {
 	font-family: 'Open Sans', 'Trebuchet MS', 'Verdana', 'Helvetica', 'Arial', sans-serif;
 	background: #d8f0f3;
@@ -20,6 +27,54 @@ body {
   background-position: left top;
 }
 
+#bodyContainer {
+	width: 70%;
+  min-width: 900px;
+	background: transparent;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+  margin-top: 40px;
+	padding-bottom: 40px;
+}
+
+#bodybox {
+  -webkit-border-bottom-right-radius: 30px;
+  -moz-border-radius-bottomright: 30px;
+  border-radius: 0px 0px 30px 0px;
+  -moz-box-shadow: -2px 2px 6px rgba(0,0,0,0.6);
+  -webkit-box-shadow: -2px 2px 6px rgba(0,0,0,0.6);
+}
+
+#content {
+	background: #fcfcfc;
+	padding: 20px;
+  padding-top: 40px;
+}
+
+#footer {
+  text-align: center;
+	padding: 0;
+	background: #DDDDDD;
+	position: relative;
+	clear: both;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-khtml-border-radius: 0px 0px 10px 0px;
+	border-radius: 0px 0px 10px 0px;
+  overflow: hidden;
+}
+
+#footer p {
+  margin: .3em;
+}
+
+/***********************************
+ *                                 *
+ *        TEXT AND HEADINGS        *
+ *                                 *
+ ***********************************/
 p {
   line-height: 180%;
 }
@@ -30,7 +85,7 @@ h1, h2, h3 {
 
 h1 {
 	font-family:'ACaslon-Regular', "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	color: #F90;
+	color: #EE8800;
 }
 
 h2 {
@@ -42,8 +97,13 @@ h3 {
 	font-size: 110%;
 }
 
-a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
-	border: none;
+/***********************************
+ *                                 *
+ *              LINKS              *
+ *                                 *
+ ***********************************/
+a img {
+  border: none;
 }
 
 a:link {
@@ -56,18 +116,11 @@ a:hover, a:active, a:focus {
   color: #C00;
 }
 
-.container {
-	width: 70%;
-  min-width: 900px;
-	background: transparent;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
-	-webkit-border-bottom-right-radius: 10px;
-	-moz-border-radius-bottomright: 10px;
-	border-bottom-right-radius: 10px;
-  margin-top: 40px;
-	padding-bottom: 40px;
-}
-
+/***********************************
+ *                                 *
+ *             HEADER              *
+ *                                 *
+ ***********************************/
 #header {
 	background: url('/images/headers/rotator.php');
   background-size: 100%;
@@ -85,6 +138,10 @@ a:hover, a:active, a:focus {
   width: 100%;
   display: inline-block;
   position: relative;
+}
+
+#headerlogo a {
+  display: block;
 }
 
 #headertext {
@@ -111,20 +168,11 @@ a:hover, a:active, a:focus {
   color: white;
 }
 
-#bodybox {
-  -webkit-border-bottom-right-radius: 30px;
-  -moz-border-radius-bottomright: 30px;
-  border-radius: 0px 0px 30px 0px;
-  -moz-box-shadow: -2px 2px 6px rgba(0,0,0,0.6);
-  -webkit-box-shadow: -2px 2px 6px rgba(0,0,0,0.6);
-}
-
-#content {
-	background: #fff;
-	padding: 20px;
-  padding-top: 40px;
-}
-
+/***********************************
+ *                                 *
+ *          NAVIGATION             *
+ *                                 *
+ ***********************************/
 #nav {
 	width: 100%;
 	float: left;
@@ -154,23 +202,11 @@ a:hover, a:active, a:focus {
 	color: #c00;
 	background-color: #fff; }
 
-.footer {
-  text-align: center;
-	padding: 0;
-	background: #DDDDDD;
-	position: relative;
-	clear: both;
-	-webkit-border-bottom-right-radius: 10px;
-	-moz-border-radius-bottomright: 10px;
-	-khtml-border-radius: 0px 0px 10px 0px;
-	border-radius: 0px 0px 10px 0px;
-  overflow: hidden;
-}
-
-.footer p {
-  margin: .3em;
-}
-
+/***********************************
+ *                                 *
+ *          PAGE ELEMENTS          *
+ *                                 *
+ ***********************************/
 hr {
   height: 1px;
   border-top: 1px;
