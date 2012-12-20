@@ -50,8 +50,7 @@ body {
 
 #content {
 	background: #fcfcfc;
-	padding: 20px;
-  padding-top: 40px;
+	padding: 50px;
 }
 
 #footer {
@@ -73,52 +72,6 @@ body {
 
 /***********************************
  *                                 *
- *        TEXT AND HEADINGS        *
- *                                 *
- ***********************************/
-p {
-  line-height: 180%;
-}
-
-h1, h2, h3 {
-  font-weight: normal;
-}
-
-h1 {
-	font-family:'ACaslon-Regular', "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	color: #EE8800;
-}
-
-h2 {
-	color: #2C93BA;
-}
-
-h3 {
-	color: #3A9AC0;
-	font-size: 110%;
-}
-
-/***********************************
- *                                 *
- *              LINKS              *
- *                                 *
- ***********************************/
-a img {
-  border: none;
-}
-
-a:link {
-	color: #69C;
-}
-a:visited {
-	color: #C3F;
-}
-a:hover, a:active, a:focus {
-  color: #C00;
-}
-
-/***********************************
- *                                 *
  *             HEADER              *
  *                                 *
  ***********************************/
@@ -129,10 +82,11 @@ a:hover, a:active, a:focus {
   background-repeat: no-repeat;
 	-webkit-border-top-left-radius: 30px;
 	-moz-border-radius-topleft: 30px;
-    border-top-left-radius: 30px;
+  border-top-left-radius: 30px;
 	box-shadow: -2px 0px 6px #888;
 	-moz-box-shadow: -2px 0px 6px #888;
 	-webkit-box-shadow: -2px 0px 6px #888;
+  padding-bottom: 10px;
 }
 
 #headerlogo{
@@ -204,6 +158,52 @@ a:hover, a:active, a:focus {
 #nav li a:hover {
 	color: #c00;
 	background-color: #fff; }
+/***********************************
+ *                                 *
+ *        TEXT AND HEADINGS        *
+ *                                 *
+ ***********************************/
+p {
+  line-height: 180%;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h1 {
+	font-family:'ACaslon-Regular', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #EE8800;
+}
+
+h2 {
+	color: #2C93BA;
+}
+
+h3 {
+	color: #3A9AC0;
+	font-size: 110%;
+}
+
+/***********************************
+ *                                 *
+ *              LINKS              *
+ *                                 *
+ ***********************************/
+a img {
+  border: none;
+}
+
+a:link {
+	color: #69C;
+}
+a:visited {
+	color: #C3F;
+}
+a:hover, a:active, a:focus {
+  color: #C00;
+}
+
 
 /***********************************
  *                                 *
