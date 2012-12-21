@@ -136,5 +136,6 @@
       </div>
       <?php include($root . '/templates/footer.php'); ?>
     </div>
-  </body>
+  </div>
+</body>
 </html>

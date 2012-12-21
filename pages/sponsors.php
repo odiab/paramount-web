@@ -14,8 +14,8 @@
       <p>We  strive to provide our study volunteers with respect, dignity and compassion.  They are not numbers, but rather partners in  our efforts. Our patient volunteers are priority and we aim to treat them as  such.  While participating in a research  study, our patients are provided ongoing information and education. They  consistently are given individualized attention and respect from all members of  our staff. We expect our seasoned staff of registered nurses, doctors and  support staff to deliver high quality, genuine care to each and every study volunteer.  This philosophy carries over into our study product. </p>
       <p>We commit to our sponsors by providing quality data delivered with accuracy and timeliness. In other words, we take our work seriously!</p>
     </div>
-    
     <?php include($root . '/templates/footer.php'); ?>
   </div>
+</div>
 </body>
 </html>
