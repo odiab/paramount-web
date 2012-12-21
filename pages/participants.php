@@ -10,7 +10,7 @@
     <div id="content">
       <h1>Potential Participants</h1>
       <h2>What Trials Are Currently Available at Paramount?</h2>
-      <p>We are currently running trials for these 
+      <p>We are currently running trials for these conditions:</p> 
       <ul>
         <li>Gout with Cardiovascular Disease</li>
         <li>Early onset of Rheumatoid Arthritis</li>
