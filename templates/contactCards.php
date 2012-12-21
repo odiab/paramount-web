@@ -14,7 +14,7 @@ function generateContactCard($employee) {
   ?>
 
   <div class='contactCard'>
-    <h2><?php echo $displayName; ?></h3>
+    <h2><?php echo $displayName; ?></h2>
     <h3><?php echo $title; ?></h3>
 
     <table>
