@@ -10,15 +10,20 @@
     <div id="bodybox">
       <div id="content">
         <h1>Contact Us</h1>
-        <hr align="left" noshade="noshade" size=1 />
         <p>If you are a patient who would like information on how to be a part of our research, there are several ways to contact us. </p>
-
-        <p><strong>Phone number: </strong> 440-826-0742 </p>
-        <p><strong>Fax: </strong> 440-891=1576 </p>
-        <p><strong>Email: </strong> info@paramountmedicalresearch.com </p>
-        <br />
-        <p>If you prefer, you can also contact us with the form below:    </p>
-        <br />
+        <table>
+          <tr>
+            <td>Phone:</td><td>(440) 826-0742</td>
+          </tr>
+          <tr>
+          <td>Fax:</td><td>(440) 891-1576</td>
+          </tr>
+          <tr>
+          <td>Email:</td><td><a href='mailto:info@paramountmedicalresearch.com'>info@paramountmedicalresearch.com</a></td>
+          </tr>
+        </table>
+        <!--
+        <p>If you prefer, you can also contact us with the form below:</p>
             
         <form method="post" action="contactform.php">
           <table width="70%" border="0">
@@ -127,6 +132,7 @@
           <br />
           <input type="submit" /> <input type="reset"  />
         </form> 
+        -->
       </div>
       <?php include($root . '/templates/footer.php'); ?>
     </div>
