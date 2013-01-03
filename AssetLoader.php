@@ -2,7 +2,8 @@
 const PAGE = 0;
 const TEMPLATE = 1;
 const HELPER = 2;
-const NUM_ASSETS = 3;
+const MODEL = 3;
+const NUM_ASSETS = 4;
 
 class AssetLoader {
 
@@ -16,6 +17,7 @@ class AssetLoader {
       $docroot,
       $root . '/templates',
       $root . '/helpers',
+      $root . '/models',
     );
   }
 
