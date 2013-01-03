@@ -3,7 +3,7 @@ class Location
 {
   private $data = null;
 
-  function __construct($data)
+  public function __construct($data)
   {
     //TODO: validate
     $this->data = $data;
