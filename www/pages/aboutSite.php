@@ -1,11 +1,12 @@
 <?php
   $root = $_SERVER['DOCUMENT_ROOT'];
-  include($root . '/templates/head.php');
+  include($root . '/../AssetLoader.php');
+  AssetLoader::load(TEMPLATE, 'head');
 ?>
 
 <body>
   <div id="bodyContainer">
-    <?php include($root . '/templates/header.php'); ?>
+    <?php AssetLoader::load(TEMPLATE, 'header'); ?>
 
     <div id="bodybox">
       <div id="content">
@@ -25,7 +26,7 @@
         <p>This website was made by Omar Diab. <a href="http://www.linkedin.com/in/osdiab">LinkedIn</a></p>
       </div>
 
-      <?php include($root . '/templates/footer.php'); ?>
+      <?php AssetLoader::load(TEMPLATE, 'footer'); ?>
     </div>
   </div>
 </body>

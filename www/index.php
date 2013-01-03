@@ -1,10 +1,12 @@
 <?php 
-  $root = $_SERVER['DOCUMENT_ROOT'];
-  include($root . '/templates/head.php');
+  $root = $_SERVER['DOCUMENT_ROOT'] . '/..';
+  include($root . '/AssetLoader.php');
+  AssetLoader::load(TEMPLATE, 'head');
 ?>
+
 <body>
  <div id="bodyContainer">
-    <?php include($root . '/templates/header.php'); ?>
+    <?php AssetLoader::load(TEMPLATE, 'header'); ?>
 
     <div id="bodybox">
       <div id="content">
@@ -26,7 +28,8 @@
           Our participants are often referred by the various members of Premier Physicians, offering them the option of clinical research.
         </p>
       </div>
-      <?php include($root . '/templates/footer.php'); ?>
+
+      <?php AssetLoader::load(TEMPLATE, 'footer'); ?>
     </div>
   </div>
 
