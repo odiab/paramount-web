@@ -1,5 +1,4 @@
 <?php
-$styles = array('contacts.css');
 $root = $_SERVER['DOCUMENT_ROOT'];
 include($root . '/../AssetLoader.php');
 AssetLoader::load(TEMPLATE, 'head');
