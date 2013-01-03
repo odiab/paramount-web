@@ -4,6 +4,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 include($root . '/../AssetLoader.php');
 AssetLoader::load(TEMPLATE, 'head');
 AssetLoader::load(HELPER, 'contactHelpers');
+AssetLoader::load(MODEL, 'Location');
 ?>
 
 <body>
@@ -15,8 +16,8 @@ AssetLoader::load(HELPER, 'contactHelpers');
         <h1>Site Locations</h1>
 
         <?php
-        $sites = array();
-        $sites[] = array(
+        $locations = array();
+        $locations[] = array(
           'title' => "Cleveland's Westside",
           'name' => 'Dr. Isam A. Diab',
           'suffix' => 'M.D.',
@@ -25,7 +26,7 @@ AssetLoader::load(HELPER, 'contactHelpers');
           'fax' => 4408911576,
           'address' => "18660 Bagley Road\nPhase 11, Suite102B\nMiddleburg Heights, OH 44130",
         );
-        $sites[] = array(
+        $locations[] = array(
           'title' => "Cleveland's Eastside",
           'name' => 'Dr. Anne M. Carrol',
           'suffix' => 'M.D.',
@@ -34,12 +35,15 @@ AssetLoader::load(HELPER, 'contactHelpers');
           'fax' => 2165048887,
           'address' => "23250 Chagrin Boulevard\nCommerce Park Five, Suite 201\nBeachwood, OH 44122",
         );
-        AssetLoader::load(TEMPLATE, 'locationPanes');
+
+        foreach ($locations as $location) {
+          $loc = new Location($location);
+          $loc->draw();
+        }
         ?>
       </div>
+      <?php AssetLoader::load(TEMPLATE, 'footer'); ?>
     </div>
-
-    <?php AssetLoader::load(TEMPLATE, 'footer'); ?>
   </div>
 </body>
 </html>
