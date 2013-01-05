@@ -5,5 +5,5 @@
       <h2>Medical Research and Consulting</h2>
     </div>
   </div>
-  <? include('navigation.php'); ?>
+  <?php include('navigation.php'); ?>
 </div>
