@@ -1,8 +1,30 @@
+<?php
+  $links = array(
+    'home' => 'Home',
+    'staff' => 'Meet Our Staff',
+    'participants' => 'For Participants',
+    'sponsors' => 'For Sponsors',
+    'locations' => 'Locations',
+    'contact' => 'Contact Us',
+  );
+
+  // get current page, root dir
+  $current = $_GET['page'];
+  $dash = strpos($current, '-');
+  if ($dash != FALSE) {
+    $current = substr($current, 0, $dash);
+  }
+?>
+
 <ul id="nav">
-  <li><a href="/">Home</a></li>
-  <li><a href="/?page=staff">Meet Our Staff</a></li>
-  <li><a href="/?page=participants">For Participants</a></li>
-  <li><a href="/?page=sponsors">For Sponsors</a></li>
-  <li><a href="/?page=locations">Locations</a></li>
-  <li><a href="/?page=contact">Contact Us</a></li>
+  <?php
+  // generate links to pages
+  foreach ($links as $key => $value) {
+    $class = '';
+    if ($current == $key) {
+      $class .= 'current';
+    }
+    echo "<li><a class='$class' href='/?page=$key'>$value</a></li>";
+  }
+  ?>
 </ul>

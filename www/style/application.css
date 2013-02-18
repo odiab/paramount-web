@@ -76,7 +76,7 @@ body {
  *                                 *
  ***********************************/
 #header {
-	background: url('/images/headers/rotator.php');
+  background: url('/images/headers/rotator.php');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ body {
   font-size: 500%;
   letter-spacing: .1em;
   font-variant: small-caps;
-	color: #FFaa00;
+  color: #FA0;
 }
 
 #headertext h2 {
@@ -130,34 +130,41 @@ body {
  *                                 *
  ***********************************/
 #nav {
-	width: 100%;
-	float: left;
-	padding: 0;
+  width: 100%;
+  float: left;
+  padding: 0;
   margin: 0;
-	list-style: none;
-	background-color: #f2f2f2;
-	border-bottom: 1px solid #ccc;
-	border-top: 1px solid #ccc;
-	box-shadow: -1px 2px 3px #bbb;
-	-moz-box-shadow: -1px 2px 3px #bbb;
-	-webkit-box-shadow: -1px 2px 3px #bbb;
+  list-style: none;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  border-top: 0px;
+  box-shadow: -1px 2px 3px #bbb;
+  -moz-box-shadow: -1px 2px 3px #bbb;
+  -webkit-box-shadow: -1px 2px 3px #bbb;
 }
 
 #nav li {
-	float: left;
+  float: left;
 }
 
 #nav li a {
-	display: block;
-	padding: 8px 15px;
-	text-decoration: none;
-	color: #069;
-	border-right: 1px solid #ccc;
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #069;
+  border-right: 1px solid #ccc;
 }
 
 #nav li a:hover {
-	color: #c00;
-	background-color: #fff; }
+  color: #c00;
+  background-color: #fff;
+}
+
+#nav li a.current {
+  color: #fff;
+  background-color: #E60;
+}
+
 /***********************************
  *                                 *
  *        TEXT AND HEADINGS        *
@@ -172,17 +179,17 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-family:'ACaslon-Regular', "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	color: #EE8800;
+  font-family:'ACaslon-Regular', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #E60;
 }
 
 h2 {
-	color: #2C93BA;
+  color: #2C93BA;
 }
 
 h3 {
-	color: #3A9AC0;
-	font-size: 110%;
+  color: #3A9AC0;
+  font-size: 110%;
 }
 
 /***********************************

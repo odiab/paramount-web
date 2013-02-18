@@ -5,5 +5,6 @@
       <h2>Medical Research and Consulting</h2>
     </div>
   </div>
-  <?php include('navigation.php'); ?>
+  <?php AssetLoader::load(TEMPLATE, 'navigation',
+        array('page' => $_GET['page'])); ?>
 </div>

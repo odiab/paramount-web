@@ -43,6 +43,10 @@ class AssetLoader {
         trigger_error("Asset at path of '$val/$path' does not exist", E_WARNING);
         return -1;
       } else {
+        foreach ($args as $key => $value) {
+          $_GET[$key] = $value;
+        }
+
         include ("$val/$path");
       }
     } else {
