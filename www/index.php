@@ -20,9 +20,9 @@
           AssetLoader::load(PAGE, '404');
         }
         ?>
+      </div>
+      <?php AssetLoader::load(TEMPLATE, 'footer'); ?>
     </div>
-
-    <?php AssetLoader::load(TEMPLATE, 'footer'); ?>
   </div>
 
 </body>
