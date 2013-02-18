@@ -3,13 +3,21 @@
  *             WEBFONTS            *
  *                                 *
  ***********************************/
-@import url("//hello.myfonts.net/count/2526b9");
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-@font-face {font-family: 'ACaslon-AltRegular';src: url('/webfonts/2526B9_0_0.eot');src: url('/webfonts/2526B9_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_0_0.woff') format('woff'),url('/webfonts/2526B9_0_0.ttf') format('truetype');}
+@font-face {
+  font-family: 'ACaslon-AltRegular';
+  src: url('/webfonts/2526B9_0_0.eot');
+  src: url('/webfonts/2526B9_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_0_0.woff') format('woff'),url('/webfonts/2526B9_0_0.ttf') format('truetype');}
 
-@font-face {font-family: 'ACaslonExp-Regular';src: url('/webfonts/2526B9_1_0.eot');src: url('/webfonts/2526B9_1_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_1_0.woff') format('woff'),url('/webfonts/2526B9_1_0.ttf') format('truetype');}
+@font-face {
+  font-family: 'ACaslonExp-Regular';
+  src: url('/webfonts/2526B9_1_0.eot');
+  src: url('/webfonts/2526B9_1_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_1_0.woff') format('woff'),url('/webfonts/2526B9_1_0.ttf') format('truetype');}
 
-@font-face {font-family: 'ACaslon-Regular';src: url('/webfonts/2526B9_2_0.eot');src: url('/webfonts/2526B9_2_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_2_0.woff') format('woff'),url('/webfonts/2526B9_2_0.ttf') format('truetype');}
+@font-face {
+  font-family: 'ACaslon-Regular';
+  src: url('/webfonts/2526B9_2_0.eot');
+  src: url('/webfonts/2526B9_2_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_2_0.woff') format('woff'),url('/webfonts/2526B9_2_0.ttf') format('truetype');}
 
 /***********************************
  *                                 *
@@ -17,26 +25,26 @@
  *                                 *
  ***********************************/
 body {
-	font-family: 'Open Sans', 'Trebuchet MS', 'Verdana', 'Helvetica', 'Arial', sans-serif;
-	background: #d8f0f3;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	background-image: url(/images/bgroundGradient.PNG);
-	background-repeat: no-repeat;
+  font-family: 'Open Sans', 'Trebuchet MS', 'Verdana', 'Helvetica', 'Arial', sans-serif;
+  background: #d8f0f3;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-image: url(/images/bgroundGradient.PNG);
+  background-repeat: no-repeat;
   background-position: left top;
 }
 
 #bodyContainer {
-	width: 70%;
+  width: 70%;
   min-width: 900px;
-	background: transparent;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
-	-webkit-border-bottom-right-radius: 10px;
-	-moz-border-radius-bottomright: 10px;
-	border-bottom-right-radius: 10px;
+  background: transparent;
+  margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
   margin-top: 40px;
-	padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 #bodybox {
@@ -49,20 +57,20 @@ body {
 }
 
 #content {
-	background: #fcfcfc;
-	padding: 50px;
+  background: #fcfcfc;
+  padding: 50px;
 }
 
 #footer {
   text-align: center;
-	padding: 0;
-	background: #DDDDDD;
-	position: relative;
-	clear: both;
-	-webkit-border-bottom-right-radius: 10px;
-	-moz-border-radius-bottomright: 10px;
-	-khtml-border-radius: 0px 0px 10px 0px;
-	border-radius: 0px 0px 10px 0px;
+  padding: 0;
+  background: #DDDDDD;
+  position: relative;
+  clear: both;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -khtml-border-radius: 0px 0px 10px 0px;
+  border-radius: 0px 0px 10px 0px;
   overflow: hidden;
 }
 
@@ -80,8 +88,8 @@ body {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-	-webkit-border-top-left-radius: 30px;
-	-moz-border-radius-topleft: 30px;
+  -webkit-border-top-left-radius: 30px;
+  -moz-border-radius-topleft: 30px;
   border-top-left-radius: 30px;
 	box-shadow: -2px 0px 6px #888;
 	-moz-box-shadow: -2px 0px 6px #888;
@@ -106,7 +114,7 @@ body {
   padding: 20px 50px 20px 50px;
   float: left;
   background-color: #2C93BA;
-	font-family: 'ACaslon-Regular', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: 'ACaslon-Regular', "Palatino Linotype", "Book Antiqua", Palatino, serif;
   text-align: center;
 }
 
@@ -202,15 +210,16 @@ a img {
 }
 
 a:link {
-	color: #69C;
+  color: #69C;
 }
+
 a:visited {
-	color: #C3F;
+  color: #C3F;
 }
+
 a:hover, a:active, a:focus {
   color: #C00;
 }
-
 
 /***********************************
  *                                 *
