@@ -1,6 +1,5 @@
 <?php
-  $root = $_SERVER['DOCUMENT_ROOT'] . '/..';
-  include($root . '/AssetLoader.php');
+  include('AssetLoader.php');
   AssetLoader::load(TEMPLATE, 'head');
 ?>
 

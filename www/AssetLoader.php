@@ -11,10 +11,9 @@ class AssetLoader {
 
   private static function init()
   {
-    $docroot = $_SERVER['DOCUMENT_ROOT'];
-    $root = $docroot . '/..';
+    $root = $_SERVER['DOCUMENT_ROOT'];
     self::$assets = array(
-      $docroot . '/pages',
+      $root . '/pages',
       $root . '/templates',
       $root . '/helpers',
       $root . '/models',
