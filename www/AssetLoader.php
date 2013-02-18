@@ -1,9 +1,9 @@
 <?php
-const PAGE = 0;
-const TEMPLATE = 1;
-const HELPER = 2;
-const MODEL = 3;
-const NUM_ASSETS = 4;
+define('PAGE', 0);
+define('TEMPLATE', 1);
+define('HELPER', 2);
+define('MODEL', 3);
+define('NUM_ASSETS', 4);
 
 class AssetLoader {
 
