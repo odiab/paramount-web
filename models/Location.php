@@ -27,7 +27,7 @@ class Location
     $description = $site['description'];
     $phone = intToPhone($site['phone']);
     $fax = intToPhone($site['fax']);
-    $address = $site['address'];
+    $address = nl2br($site['address']);
 
     echo <<<HTML
     <div class='contactPaneContainer'>

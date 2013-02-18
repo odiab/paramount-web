@@ -114,7 +114,7 @@ body {
   margin: 0;
   font-size: 500%;
   letter-spacing: .1em;
-  font-variant: small-caps; 
+  font-variant: small-caps;
 	color: #FFaa00;
 }
 
@@ -136,7 +136,7 @@ body {
   margin: 0;
 	list-style: none;
 	background-color: #f2f2f2;
-	border-bottom: 1px solid #ccc; 
+	border-bottom: 1px solid #ccc;
 	border-top: 1px solid #ccc;
 	box-shadow: -1px 2px 3px #bbb;
 	-moz-box-shadow: -1px 2px 3px #bbb;
@@ -217,4 +217,8 @@ hr {
   border-left: none;
   border-color: #aaa;
   width: 40%;
+}
+
+table td {
+  vertical-align: top;
 }

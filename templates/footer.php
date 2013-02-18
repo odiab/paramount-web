@@ -1,8 +1,8 @@
 <div id="footer">
   <p>
     Copyright Paramount Medical Research &amp; Consulting, LLC, 2010.
-    <a href="/pages/contact.php">Contact Us.</a>
+    <a href="/?page=contact">Contact Us.</a>
     |
-    <a href="/pages/aboutSite.php">About this site</a>
+    <a href="/?page=aboutSite">About this site</a>
   </p>
 </div>

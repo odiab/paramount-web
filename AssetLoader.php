@@ -14,7 +14,7 @@ class AssetLoader {
     $docroot = $_SERVER['DOCUMENT_ROOT'];
     $root = $docroot . '/..';
     self::$assets = array(
-      $docroot,
+      $docroot . '/pages',
       $root . '/templates',
       $root . '/helpers',
       $root . '/models',
@@ -36,9 +36,16 @@ class AssetLoader {
       $path = $path . '.php';
     }
 
-    if (is_int($type) && $type >= 0 && $type < NUM_ASSETS) { 
+    $path = str_replace ('-', '/', $path);
+
+    if (is_int($type) && $type >= 0 && $type < NUM_ASSETS) {
       $val = self::$assets[$type];
-      include ("$val/$path");
+      if (!file_exists ("$val/$path")) {
+        trigger_error("Asset at path of '$val/$path' does not exist", E_WARNING);
+        return -1;
+      } else {
+        include ("$val/$path");
+      }
     } else {
       trigger_error("Invalid asset type of '$type'", E_WARNING);
       return -1;
