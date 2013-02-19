@@ -9,7 +9,10 @@
   );
 
   // get current page, root dir
-  $current = $_GET['page'];
+  if (!isset($args['page'])) {
+    $args['page'] = '';
+  }
+  $current = $args['page'];
   $dash = strpos($current, '-');
   if ($dash != FALSE) {
     $current = substr($current, 0, $dash);

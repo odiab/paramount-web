@@ -6,18 +6,18 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @font-face {
   font-family: 'ACaslon-AltRegular';
-  src: url('/webfonts/2526B9_0_0.eot');
-  src: url('/webfonts/2526B9_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_0_0.woff') format('woff'),url('/webfonts/2526B9_0_0.ttf') format('truetype');}
+  src: url('/assets/webfonts/2526B9_0_0.eot');
+  src: url('/assets/webfonts/2526B9_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/2526B9_0_0.woff') format('woff'),url('/assets/webfonts/2526B9_0_0.ttf') format('truetype');}
 
 @font-face {
   font-family: 'ACaslonExp-Regular';
-  src: url('/webfonts/2526B9_1_0.eot');
-  src: url('/webfonts/2526B9_1_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_1_0.woff') format('woff'),url('/webfonts/2526B9_1_0.ttf') format('truetype');}
+  src: url('/assets/webfonts/2526B9_1_0.eot');
+  src: url('/assets/webfonts/2526B9_1_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/2526B9_1_0.woff') format('woff'),url('/assets/webfonts/2526B9_1_0.ttf') format('truetype');}
 
 @font-face {
   font-family: 'ACaslon-Regular';
-  src: url('/webfonts/2526B9_2_0.eot');
-  src: url('/webfonts/2526B9_2_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/2526B9_2_0.woff') format('woff'),url('/webfonts/2526B9_2_0.ttf') format('truetype');}
+  src: url('/assets/webfonts/2526B9_2_0.eot');
+  src: url('/assets/webfonts/2526B9_2_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/2526B9_2_0.woff') format('woff'),url('/assets/webfonts/2526B9_2_0.ttf') format('truetype');}
 
 /***********************************
  *                                 *
@@ -30,7 +30,7 @@ body {
   margin: 0;
   padding: 0;
   color: #000;
-  background-image: url(/images/bgroundGradient.PNG);
+  background-image: url(/assets/images/bgroundGradient.PNG);
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -84,7 +84,7 @@ body {
  *                                 *
  ***********************************/
 #header {
-  background: url('/images/headers/rotator.php');
+  background: url('/assets/images/headers/rotator.php');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;

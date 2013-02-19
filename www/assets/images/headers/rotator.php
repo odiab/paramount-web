@@ -25,6 +25,9 @@ if (isset($_GET['img'])) {
   $fileList = array();
   $handle = opendir($folder);
   while ( false !== ( $file = readdir($handle) ) ) {
+    if (!is_file ($file)) {
+      continue;
+    }
     $file_info = pathinfo($file);
     if (
         isset( $extList[ strtolower( $file_info['extension'] ) ] )

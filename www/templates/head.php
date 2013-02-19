@@ -3,13 +3,11 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Paramount Medical Research and Consulting</title>
-  <link rel="stylesheet" href="/style/style.php?<?php echo time(); ?>" media="screen" />
+  <link rel="stylesheet" href="/assets/style/style.php?<?php echo time(); ?>" media="screen" />
 
   <?php if(isset($styles)) {
     foreach ($styles as $style) { ?>
-      <link rel="stylesheet" href="/style/<?php echo $style ?>" media="screen" />
+      <link rel="stylesheet" href="/assets/style/<?php echo $style ?>" media="screen" />
     <?php }
   } ?>
-
-  <script type="text/javascript" src="/scripts/lib/jquery-1.8.3.min.js"></script> 
 </head>
