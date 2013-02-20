@@ -5,6 +5,6 @@
       <h2>Medical Research and Consulting</h2>
     </div>
   </div>
-  <?php AssetLoader::load(TEMPLATE, 'navigation',
+  <?php Assets::load(TEMPLATE, 'navigation',
         array('path' => $args['path'])); ?>
 </div>

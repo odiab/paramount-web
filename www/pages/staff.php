@@ -1,6 +1,6 @@
 <?php
-AssetLoader::load(HELPER, 'contactHelpers');
-AssetLoader::load(MODEL, 'Employee');
+Assets::load(HELPER, 'contactHelpers');
+Assets::load(MODEL, 'Employee');
 ?>
 <h1>Meet Our Staff</h1>
 <div class="contactSection">

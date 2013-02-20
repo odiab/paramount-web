@@ -1,6 +1,6 @@
 <?php
-AssetLoader::load(HELPER, 'contactHelpers');
-AssetLoader::load(MODEL, 'Location');
+Assets::load(HELPER, 'contactHelpers');
+Assets::load(MODEL, 'Location');
 ?>
 
 <h1>Site Locations</h1>

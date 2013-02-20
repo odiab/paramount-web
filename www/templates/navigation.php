@@ -17,7 +17,7 @@
   }
 
   $current = $args['path'];
-  $current = AssetLoader::formatPath($current, array('.php' => FALSE));
+  $current = Assets::formatPath($current, array('.php' => FALSE));
   $first = strpos($current, '/');
   if ($first !== FALSE) {
     $current = substr($current, 0, $first);

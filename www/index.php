@@ -1,21 +1,21 @@
 <?php
-  include('AssetLoader.php');
-  AssetLoader::load(TEMPLATE, 'head');
+  include('Assets.php');
+  Assets::load(TEMPLATE, 'head');
   $path = $_SERVER['REQUEST_URI'];
 ?>
 
 <body>
   <div id="bodyContainer">
-    <?php AssetLoader::load(TEMPLATE, 'header', array('path' => $path)); ?>
+    <?php Assets::load(TEMPLATE, 'header', array('path' => $path)); ?>
     <div id="bodybox">
       <div id="content">
         <?php
-        if (AssetLoader::load(PAGE, $path) != 0) {
-          AssetLoader::load(PAGE, '404');
+        if (Assets::load(PAGE, $path) != 0) {
+          Assets::load(PAGE, '404');
         }
         ?>
       </div>
-      <?php AssetLoader::load(TEMPLATE, 'footer'); ?>
+      <?php Assets::load(TEMPLATE, 'footer'); ?>
     </div>
   </div>
 

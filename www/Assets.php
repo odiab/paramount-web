@@ -5,7 +5,7 @@ define('HELPER', 2);
 define('MODEL', 3);
 define('NUM_ASSETS', 4);
 
-class AssetLoader {
+class Assets {
 
   private static $assets = null;
 
