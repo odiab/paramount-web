@@ -25,7 +25,7 @@
     and hands on assistance.
 </p>
 <p>
-  <a href="/?page=about-otherStaff">
+  <a href="/about/otherStaff">
     Our nurses, study coordinators, and other staff
   </a>
 </p>

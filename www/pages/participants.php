@@ -24,12 +24,12 @@
 <h2>Information about Clinical Trials</h2>
 <ul>
   <li>
-    <a href="/?page=participants-clinicalTrials.php">
+    <a href="/participants/clinicalTrials">
       What is a clinical trial?
     </a>
   </li>
   <li>
-    <a href="/?page=participants-participate.php">
+    <a href="/participants/participate">
       Why participate in clinical trials?
     </a>
   </li>

@@ -8,26 +8,37 @@
     'contact' => 'Contact Us',
   );
 
+  $highlight = true;
+
   // get current page, root dir
-  if (!isset($args['page'])) {
-    $args['page'] = '';
+  if (!isset($args['path'])) {
+    $args['path'] = '';
+    $highlight = false;
   }
-  $current = $args['page'];
-  $dash = strpos($current, '-');
-  if ($dash != FALSE) {
-    $current = substr($current, 0, $dash);
+
+  $current = $args['path'];
+  $current = AssetLoader::formatPath($current, array('.php' => FALSE));
+  $first = strpos($current, '/');
+  if ($first !== FALSE) {
+    $current = substr($current, 0, $first);
+  }
+
+  if ($current == '') {
+    $current = 'home';
   }
 ?>
 
 <ul id="nav">
   <?php
   // generate links to pages
-  foreach ($links as $key => $value) {
-    $class = '';
-    if ($current == $key) {
-      $class .= 'current';
+  if ($highlight) {
+    foreach ($links as $key => $value) {
+      $class = '';
+      if ($current == $key) {
+        $class .= 'current';
+      }
+      echo "<li><a class='$class' href='/$key'>$value</a></li>";
     }
-    echo "<li><a class='$class' href='/?page=$key'>$value</a></li>";
   }
   ?>
 </ul>

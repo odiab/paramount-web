@@ -9,33 +9,92 @@ class AssetLoader {
 
   private static $assets = null;
 
-  /***********
-   * HELPERS *
-   ***********/
-  private static function validatePagePath($path)
+  //***********
+  //* HELPERS *
+  //***********
+
+  /**
+   * Removes trailing slashes and leading slashes for paths
+   */
+  private static function standardizeSlashes($path)
   {
-    // prepare string
-    if (strlen($path) >= 4 && substr($path, -4) == '.php') {
-      $path = substr($path, 0, strlen($path) - 4);
+    $len = strlen($path);
+    if ($len == 0) {
+      return $path;
     }
 
-    // check validity
-    $valid = true;
-    if ($path[0] == '-') {
-      $valid = false;
-    } else {
-      $tmp = str_replace ('-', '', $path);
-      if (!ctype_alnum ($tmp)) {
-        $valid = false;
+    if ($path[$len - 1] == '/') {
+      if ($len == 1) {
+        return '';
       }
+      $path = substr($path, 0, $len - 1);
     }
 
-    return $valid;
+    $len = strlen($path);
+    if ($path[0] == '/') {
+      $path = substr($path, 1, $len - 1);
+    }
+
+    return $path;
   }
 
-  /********
-   * INIT *
-   ********/
+  private static function removePHPExtension($path)
+  {
+    $len = strlen($path);
+    if ($len < 4) {
+      return $path;
+    }
+
+    if (substr($path, -4) == '.php') {
+      $path = substr($path, 0, $len - 4);
+    }
+    return $path;
+  }
+  private static function addPHPExtension($path)
+  {
+    $len = strlen($path);
+    if ($len == 0) {
+      return $path;
+    }
+
+    if ($len < 4 || substr($path, -4) != '.php') {
+      $path .= '.php';
+    }
+    return $path;
+  }
+
+  private static function removeQueryString($path)
+  {
+    $parts = explode('?', $path, 2);
+    if ($parts != FALSE && count($parts) > 0) {
+      $path = $parts[0];
+      return $path;
+    } else {
+      return '';
+    }
+  }
+
+  /**
+   * Formats paths to cooperate with the loader
+   */
+  public static function formatPath($path, $options=array())
+  {
+    $path = self::removeQueryString($path);
+    $path = self::standardizeSlashes($path);
+
+    if ($path == '') return $path; // treat empty path separately
+
+    if (isset($options['.php']) && !$options['.php']) {
+      $path = self::removePHPExtension($path);
+    } else {
+      $path = self::addPHPExtension($path);
+    }
+    return $path;
+  }
+
+  //********
+  //* INIT *
+  //********
   private static function init()
   {
     $root = $_SERVER['DOCUMENT_ROOT'];
@@ -47,48 +106,38 @@ class AssetLoader {
     );
   }
 
-  /***********
-   * METHODS *
-   ***********/
+  //***********
+  //* METHODS *
+  //***********
   public static function load($type, $path, $args=array())
   {
+    // validate
     if (!is_array(self::$assets)) {
       self::init();
     }
 
     if (!is_string($path)) {
-      trigger_error("Invalid path '$path', must be a string", E_WARNING);
+      trigger_error("Invalid path '$path', must be a string", E_USER_WARNING);
       return -1;
     }
 
-    if (strlen($path) < 4 || substr($path, -4) != '.php') {
-      $path .= '.php';
+    if (!is_int($type) || $type < 0 || $type >= NUM_ASSETS) {
+      trigger_error("Invalid asset type of '$type'", E_USER_WARNING);
+      return -1;
     }
 
-    if (is_int($type) && $type >= 0 && $type < NUM_ASSETS) {
-      if ($type == PAGE) {
-        $valid = self::validatePagePath($path);
+    // act
+    $path = self::formatPath ($path);
+    if ($type == PAGE && $path == '') {
+      $path = 'home.php';
+    }
 
-        if (!$valid) {
-          trigger_error("Path '$path' must consist of alphanumeric character
-            s and dashes, and the first character must not be a dash",
-            E_WARNING);
-          return -1;
-        }
-
-        $path = str_replace ('-', '/', $path);
-      }
-
-      $val = self::$assets[$type];
-      if (!file_exists ("$val/$path")) {
-        trigger_error("Asset at path of '$val/$path' does not exist", E_WARNING);
-        return -1;
-      } else {
-        include ("$val/$path");
-      }
+    $val = self::$assets[$type];
+    if (!file_exists ("$val/$path")) {
+      trigger_error("Asset at path of '$val/$path' does not exist", E_USER_WARNING);
+      return -1;
     } else {
-      trigger_error("Invalid asset type of '$type'", E_WARNING);
-      return -1;
+      include ("$val/$path");
     }
 
     return 0;

@@ -1,21 +1,16 @@
 <?php
   include('AssetLoader.php');
   AssetLoader::load(TEMPLATE, 'head');
-  if (isset($_GET["page"])) {
-    $index = $_GET["page"];
-  } else {
-    $index = 'home';
-  }
-
+  $path = $_SERVER['REQUEST_URI'];
 ?>
 
 <body>
- <div id="bodyContainer">
-    <?php AssetLoader::load(TEMPLATE, 'header', array('page' => $index)); ?>
+  <div id="bodyContainer">
+    <?php AssetLoader::load(TEMPLATE, 'header', array('path' => $path)); ?>
     <div id="bodybox">
       <div id="content">
         <?php
-        if (AssetLoader::load(PAGE, $index) != 0) {
+        if (AssetLoader::load(PAGE, $path) != 0) {
           AssetLoader::load(PAGE, '404');
         }
         ?>

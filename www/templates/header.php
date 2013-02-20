@@ -6,5 +6,5 @@
     </div>
   </div>
   <?php AssetLoader::load(TEMPLATE, 'navigation',
-        array('page' => $args['page'])); ?>
+        array('path' => $args['path'])); ?>
 </div>

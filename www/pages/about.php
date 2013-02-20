@@ -5,6 +5,6 @@
 
 <h3>Read more about us:</h3>
 <ul>
-  <li><a href="/?page=about-history">The History of Paramount</a></li>
-  <li><a href="/?page=about-staff">Our Staff</a></li>
+  <li><a href="/about/history">The History of Paramount</a></li>
+  <li><a href="/about/staff">Our Staff</a></li>
 </ul>
