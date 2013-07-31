@@ -109,8 +109,7 @@ body {
   cursor: hand;
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  margin-top: -30%;
+  top: 20%;
   padding: 20px 50px 20px 50px;
   float: left;
   background-color: #2C93BA;
