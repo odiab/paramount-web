@@ -21,5 +21,12 @@
       </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type='text/javascript'>
+      function randomInt(min, max) {
+        return min + Math.floor(Math.random() * (max - min + 1))
+      }
+      var imgPath = '/assets/images/headers/' + randomInt(0, 6) + '.jpg'
+      $('#header').css('background-image', 'url(' + imgPath + ')');
+    </script>
   </body>
 </html>
