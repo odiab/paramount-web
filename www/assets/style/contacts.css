@@ -11,6 +11,7 @@
   -moz-box-shadow: -2px 2px 6px #888;
   -webkit-box-shadow: -2px 2px 3px #888;
   width: 80%;
+  max-width: 800px;
   clear: both;
 }
 
