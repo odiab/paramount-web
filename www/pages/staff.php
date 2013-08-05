@@ -3,6 +3,20 @@ Assets::load(HELPER, 'contactHelpers');
 Assets::load(MODEL, 'Employee');
 ?>
 <h1>Meet Our Staff</h1>
+<p>
+  The staff at Paramount is made up of professionals who bring experiences from
+  a variety of settings. These include clinical research at the major teaching
+  hospitals emergency care, diabetes management, and medical and nursing care
+  in rheumatology, nephrology, cardiovascular disease and more.
+</p>
+
+<p>
+  In addition, many of Dr. Diab’s colleagues are physicians who practice
+  internal medicine, endocrinology, gastroenterology, infectious disease, and
+  pulmonary and cardiovascular conditions.
+</p>
+
+
 <div class="contactSection">
   <?php
   // populate contact panes
@@ -15,7 +29,7 @@ Assets::load(MODEL, 'Employee');
     'phone' => 4408260742,
     'fax' => 4408911576,
     'email' => 'idiab',
-    'description' => 'Dr. Isam A. Diab specializes in rheumatology and  has been conducting clinical research for nearly 20 years as both a  Principal-Investigator and Sub-Investigator. Maintaining collaboration with  approximately 75 private practitioners in a large multi-disciplinary network,  Dr. Diab has grown his private practice into one of the largest within the  United States. His thorough understanding of medicine along with enthusiasm for  patient needs is clearly seen throughout his oversight of the clinical research  process.',
+    'description' => 'Dr. Isam A. Diab specializes in rheumatology and has been conducting clinical research for nearly 20 years as both a Principal-Investigator and Sub-Investigator. Maintaining collaboration with approximately 75 private practitioners in a large multi-disciplinary network, Dr. Diab has grown his private practice into one of the largest within the United States. His thorough understanding of medicine along with enthusiasm for patient needs is clearly seen throughout his oversight of the clinical research process. Dr. Diab has treated individuals over the vast spectrum of immunological diseases, including rheumatoid arthritis, systemic lupus erythmatosus, lupus nephritis, osteoporosis, psoriatic arthritis, gout conditions and more. Because of his experience and dedication to the profession, Dr. Diab is highly sought after by major pharmaceutical companies as both an investigator and speaker.',
   );
   $employees[] = array(
     'name' => 'Mirza I. Baig',
