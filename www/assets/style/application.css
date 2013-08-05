@@ -57,8 +57,12 @@ body {
 }
 
 #content {
-  background: #fcfcfc;
   padding: 50px;
+  width: 800px;
+}
+
+#contentContainer {
+  background: #fcfcfc;
 }
 
 #footer {

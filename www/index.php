@@ -10,12 +10,14 @@
     <div id="bodyContainer">
       <?php Assets::load(TEMPLATE, 'header', array('path' => $path)); ?>
       <div id="bodybox">
-        <div id="content">
-          <?php
-          if (Assets::load(PAGE, $path) != 0) {
-            Assets::load(PAGE, '404');
-          }
-          ?>
+        <div id="contentContainer">
+          <div id="content">
+            <?php
+            if (Assets::load(PAGE, $path) != 0) {
+              Assets::load(PAGE, '404');
+            }
+            ?>
+          </div>
         </div>
         <?php Assets::load(TEMPLATE, 'footer'); ?>
       </div>
