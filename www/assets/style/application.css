@@ -58,7 +58,6 @@ body {
 
 #content {
   padding: 50px;
-  width: 800px;
 }
 
 #contentContainer {
@@ -181,6 +180,7 @@ body {
  *                                 *
  ***********************************/
 p {
+  max-width: 800px;
   line-height: 180%;
 }
 
@@ -239,4 +239,16 @@ hr {
 
 table td {
   vertical-align: top;
+}
+
+#introText {
+  float: left;
+  width: 40%;
+}
+
+#staffImg {
+  display: block;
+  float: right;
+  width: 50%;
+  margin: 5%;
 }
