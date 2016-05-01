@@ -1,5 +1,10 @@
 build/ # output directory for jekyll
 
+# JEKYLL
+_site/
+.sass-cache/
+.jekyll-metadata
+
 # OSX
 .DS_Store
 .AppleDouble
